@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header-logo{
+    animation: color 1.8s ease infinite;
+}
+@keyframes color {
+    0%{
+        color: darkblue;
+    }50%{
+        color: aqua;
+    }75%{
+        color: darkorange;
+    }100%{
+        color: violet;
+    }
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.header-nav ul{
+    display: flex;
+    list-style: none;
+}
+.header-nav ul li{
+    padding: 0 30px;
+    font-weight: bolder;
+    animation: color 1.8s ease infinite;
+}
+.header-btn button{
+    padding: 10px 20px;
+    border-radius: 9px;
+    background-color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    color: white;
+    animation: color 1.8s ease infinite;
+}
+.header-btn button:hover{
+    background-color: fuchsia;
+    color: chartreuse;
+    transition: all 0.9s;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.section-main{
+    display: flex;
+    align-items: center;
+}
+.sec-h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+    animation: move 1.3s ease alternate-reverse forwards;
+
+}
+.sec-p{
+    font-size: 17px;
+    margin-bottom: 25px;
+    animation: move 2.6s ease alternate-reverse forwards;
+
+}
+.sec-btn button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: darkgoldenrod;
+    color: white;
+    border: 1px solid darkgoldenrod;
+    animation: move 3.9s ease alternate-reverse forwards;
+
+}
+.sec-img img{
+    padding-top: 20px;
+    animation: move 3.9s ease alternate-reverse forwards;
+
+}
+
+.sec-btn button:hover{
+    background-color: cyan;
+    color: chocolate;
+    transition: all 0.9s;
+    border: 1px solid cyan;
+}
+@keyframes move {
+    0%{
+        filter: blur(0px);
+        transform: translatex(20px);
+    }  100%{
+        filter: blur(100px);
+        transform: translatex(-200px);
+    }
+}
